@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/logo2.jpeg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacts" id="contacts">
+        <h1 class="heading">Contact Me</h1>
+        <div class="row">
+
+            <div class="content" data-aos="slide-right">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> mungasekav04@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i>+918149230364</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Sanjivani College of Engineering<br></h3>
+                </div>
+            </div>
+
+            <form method="">
+                <input type="text" placeholder="name" id="sendername" class="box">
+                <input type="email" placeholder="email" id="reply_to" class="box">
+                <input type="phone" placeholder="Phone" id="phone" class="box">
+                <input type="text" placeholder="subject" id="subject" class="box"><br>
+                <textarea id="message" cols="30" rows="8" class="box message" placeholder="message"></textarea><br>
+                <button type="submit" class="btn" onclick="sendMail();"> send <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <script>
+                function sendMail() {
+                        (function () {
+                            emailjs.init("dpqz6N77kqk8R0-9h"); // Account Public Key 
+                        })();
+                        var params = {
+                            sendername: document.querySelector("#sendername").value, 
+                            //to: document.querySelector("#to").value,
+                            phone: document.querySelector("#phone").value,
+                            subject: document.querySelector("#subject").value,
+                            replyto: document.querySelector("#reply_to").value,
+                            message: document.querySelector("#message").value,};
+                            var serviceID = "service_zv9t7mi"; // Email Service ID
+                            var templateID = "template_wry0v7l"; // Email Template ID
+                            
+                            emailjs.send(serviceID, templateID, params)
+                                .then(res =>{
+                                    alert("Email Send Successfully !")
+                                })
+                                .catch("Error !");
+                        }
+            </script>
+        </div>
+
+    </section>
+    <footer>
+        <!-- <p>&copy; 2024 My Portfolio</p> -->
+        <div class="credits">Copyright<span> Kaveri Mungase</span> | all rights reserved |2024. </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

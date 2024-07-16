@@ -1,0 +1,609 @@
+/* Existing styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff; /* Light grey background for the entire page */
+    font-size: 12.5px; /* Base font size for the body */
+    font-weight: bold; /* Make all text bold */
+}
+
+header {
+    background-color: #333;
+    color: rgb(198, 126, 126);
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.4em; /* Increase font size in the header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    background-color: #fff; /* White background for the main content area */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+   
+}
+
+.intro {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 1.2em; /* Increase font size in the intro section */
+}
+
+.intro h2 {
+    font-size: 2.5em; /* Increase font size for the name */
+    color: #ef4949; /* Change color of the name */
+    font-weight: bold; /* Ensure the name is bold */
+}
+
+.intro h3 {
+    font-size: 2em; /* Increase font size for the greeting */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.social-media {
+    margin-top: 1em;
+    font-size: 1.4em; /* Increase font size for social media links */
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.social-media i {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.2em; /* Adjust font size in the footer */
+}
+
+
+.heading {
+    text-align: left; /* Align heading to the left */
+    font-size: 2.5rem; /* Reduced font size */
+    padding: 0rem; 
+    
+    color: #333;
+    margin: 0 0 0.5rem 0.5rem; /* Adjusted margin */
+    max-width: 800px;
+    height: 2px;
+    
+}
+
+.about .row {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: wrap;
+    padding: 0.5rem ;
+}
+
+.about .row .info {
+    flex: 1 1 60%; /* Adjusted width to allow more space for text */
+    padding: 0.5rem; /* Padding around the text */
+    max-width: 500px; /* Set max width for info */
+    max-height: 100px;
+}
+
+.about .row .info h3 {
+    font-size: 1.5rem; /* Reduced font size */
+    color: rgb(153, 52, 98);
+    padding: 0rem 0rem; /* Less padding */
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: black;
+    padding: 0 0rem;
+}
+
+.about .row .counter {
+    flex: 1 1 35%; /* Adjusted to take less width */
+    display: flex;
+    flex-direction: column; /* Arrange boxes vertically */
+    align-items: flex-start; /* Align boxes to the left */
+    padding: 0.5rem;
+}
+
+.about .row .counter .box {
+    width: 10rem; /* Width of the boxes */
+    height: 3.5rem; /* Height of the boxes */
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 2rem; /* Padding for boxes */
+    margin: 0.5rem 0.5rem; /* Margin above and below boxes */
+    border: 1px solid purple;
+    border-radius: 1rem; /* Rounded corners */
+    margin-right: 1rem;
+}
+
+.about .row .counter .box span {
+    font-size: 1.5rem; /* Font size for the counts */
+    color: rgb(103, 33, 55);
+  
+}
+
+.about .row .counter .box h3 {
+    font-size: 1rem; /* Reduced font size for titles */
+    color: black;
+    
+}
+
+.box {
+    width: 300px; /* Increased width */
+    padding: 2rem;
+    border: 1px solid purple;
+    border-radius: 7rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 0.5rem; /* Add margin bottom for spacing */
+    max-width: 800px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    color: rgb(103, 33, 55);
+    margin-top: 1.5rem;
+}
+
+.box h4 {
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.box span {
+    font-size: 1.3rem;
+    color: rgb(103, 33, 55);
+    padding: 0.3rem 0.3rem;
+    border-radius: 7rem;
+    background: #ece9e9;
+    border: 1px solid purple;
+    display: inline-block;
+    margin-top: -1rem; /* Adjust position relative to the icon */
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(100% - 2rem); /* Adjust box width for smaller screens*/ 
+        margin: 1rem; /* Adjust margin for smaller screens */
+    }
+}
+/* Reset default margin and padding */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.main {
+    padding: 2em;
+    background-color: #fff; /* White background for the main content area */
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+}
+h1 .heading {
+    margin-top: 1em; /* Add margin-top to space it from the header */
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Increase heading size */
+    color: #ef4949; /* Heading color */
+    margin-bottom: 2rem; /* Space below heading */
+
+}
+header {
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.education {
+    text-align: center; /* Center align text */
+    font-size: 1.5em; /* Adjust font size */
+    margin-top: 2em; /* Add margin-top to space it from the header */
+    padding: 2em 0; /* Add padding top and bottom */
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap */
+    justify-content: center; /* Center align boxes horizontally */
+    gap: 2rem; /* Add gap between boxes */
+    margin: 0 auto; /* Center the container */
+    max-width: 1000px; /* Limit the width of the container */
+}
+
+.box {
+    width: calc(50% - 2rem); /* Adjust box width for responsive layout */
+    max-width: 300px; /* Limit maximum width of the box */
+    padding: 2rem;
+    border: 1px solid purple;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem; /* Add margin bottom between boxes */
+    background-color: #fff; /* White background */
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    color: rgb(103, 33, 55);
+    margin-top: 1.5rem;
+}
+
+.box h4 {
+    font-size: 1rem;
+    color: black;
+    margin-top: 1rem;
+    font-weight: normal;
+}
+
+.box span {
+    font-size: 1.3rem;
+    color: rgb(103, 33, 55);
+    padding: 0.5rem 2rem;
+    border-radius: 4rem;
+    background: #ece9e9;
+    border: 1px solid purple;
+    display: inline-block;
+    margin-top: -1rem; /* Adjust position relative to the icon */
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(100% - 2rem); /* Full width on smaller screens */
+        margin: 1rem; /* Adjust margin for smaller screens */
+    }
+}
+
+.skills {
+    padding: 1rem; /* Add padding to the skills section */
+    margin: 0 0 0.5rem 0.5rem; /* Adjusted margin */
+    height: 40em;
+    margin-left: 22em;
+    margin-top: 2em;
+    width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.heading {
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Increase heading size */
+    color: #ef4949; /* Heading color */
+    margin-bottom: 2rem; /* Space below heading */
+    
+}
+
+.skills-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+    justify-content: center; /* Center content */
+    align-items: flex-start; /* Align items at the start */
+    gap: 2rem; /* Space between skill sections */
+    width: 800px;
+    height: 5em;
+}
+
+.skills-left,
+.skills-right {
+    flex: 1; /* Allow sections to grow equally */
+    min-width: 300px; /* Minimum width to maintain layout on smaller screens */
+    max-width: 500px; /* Maximum width for better readability */
+    padding: 1rem; /* Add padding */
+}
+
+.progress {
+    margin-bottom: 2rem; /* Space between progress bars */
+}
+
+.progress h3 {
+    color: black;
+    font-weight: normal;
+    font-size: 1.5rem; /* Reduced font size for skill labels */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5rem;
+    height: 1.5rem; /* Reduced height of progress bars */
+    margin: 0.5rem 0; /* Space between bars */
+    background: #e0e0e0; /* Background for the bar */
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    border-radius: 5rem; /* Rounded edges */
+}
+
+/* Animation classes for each skill */
+.skills .progress .cpp .anim {
+    background: rgb(103, 33, 55);
+    animation: cpp 1.5s linear forwards;
+}
+
+@keyframes cpp {
+    100% {
+        width: 85%; /* Adjusted completion width */
+    }
+}
+
+/* Repeat for other skills with adjusted percentages */
+.skills .progress .dsa .anim {
+    background: rgb(54, 61, 65);
+    animation: dsa 1.5s linear forwards;
+}
+
+@keyframes dsa {
+    100% {
+        width: 50%; /* Adjusted completion width */
+    }
+}
+
+.skills .progress .java .anim {
+    background: rgb(103, 33, 55);
+    animation: java 1.5s linear forwards;
+}
+
+@keyframes java {
+    100% {
+        width: 60%; /* Adjusted completion width */
+    }
+}
+
+.skills .progress .python .anim {
+    background: rgb(128, 0, 255);
+    animation: python 1.5s linear forwards;
+}
+
+@keyframes python {
+    100% {
+        width: 80%; /* Adjusted completion width */
+    }
+}
+
+.skills .progress .html .anim {
+    background: rgb(235, 6, 6);
+    animation: html 1.5s linear forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 70%; /* Adjusted completion width */
+    }
+}
+
+.skills .progress .sqli .anim {
+    background: rgb(15, 171, 185);
+    animation: sqli 1.5s linear forwards;
+}
+
+@keyframes sqli {
+    100% {
+        width: 90%; /* Adjusted completion width */
+    }
+}
+
+.skills .progress .angular .anim {
+    background: rgb(255, 215, 0); /* Yellow color for Angular */
+    animation: angular 1.5s linear forwards;
+}
+
+@keyframes angular {
+    100% {
+        width: 60%; /* Adjusted completion width */
+    }
+}
+.projects{
+    padding: 1rem; /* Add padding to the skills section */
+    margin: 0 0 0.5rem 0.5rem; /* Adjusted margin */
+    height: 40em;
+    margin-left: 22em;
+    margin-top: 2em;
+    width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.projects .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 0.5rem; /* Space between boxes */
+    padding: 2em; /* Combined padding */
+    justify-items: center; /* Center boxes horizontally */
+    align-items: center; /* Center boxes vertically */
+}
+
+.projects .box-container .box {
+    display: flex;
+    height: 8rem; /* Reduced height */
+    width: 100%; /* Full width within the grid column */
+    max-width: 10rem; /* Reduced max width */
+    box-shadow: var(--box-shadow2);
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: rgb(58, 71, 45);
+    font-size: 1.5rem; /* Reduced font size */
+    color: rgb(58, 71, 45);
+    transition: 0.2s;
+}
+
+.projects .box-container .box h4 {
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 1rem; /* Adjusted margin */
+    color: #ddd;
+}
+
+.projects .box-container .box h5 {
+    color: #040000;
+}
+
+.projects .box-container .box:hover {
+    background: #603b64;
+    box-shadow: var(--box-shadow4);
+    color: #603b64;
+    transform: scale(0.9, 0.9);
+}
+.contacts{
+    padding: 1rem; /* Add padding to the skills section */
+    margin: 0 0 0.5rem 0.5rem; /* Adjusted margin */
+    height: 40em;
+    margin-left: 22em;
+    margin-top: 2em;
+    width: 800px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contacts .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust gap between items */
+    padding-top: 0; /* Remove gap above the row */
+}
+
+.contacts .row .content {
+    flex: 1 1 2rem;
+    padding: 1rem 2rem 1rem 1rem; /* Consolidate padding */
+}
+
+.contacts .row form {
+    flex: 1 1 5rem;
+    padding: 1rem 1rem 1rem 1rem; /* Consolidate padding */
+    margin: 1rem 0; /* Adjust margin */
+}
+
+.contacts .row form .box {
+    width: 60%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: rgb(224, 224, 224);
+    color: black;
+    font-size: 1rem;
+    border-radius: 0.1rem;
+    border-bottom: 1px solid rgb(68, 24, 230);
+    overflow: hidden;
+    /* box-align: right; */
+    
+}
+
+.contacts .row form .message {
+    height: 4rem;
+    resize: none;
+}
+
+.contacts .row .content .title {
+    text-transform: uppercase;
+    color: rgb(103, 33, 55);
+    font-size: 2.5em;
+    margin-bottom: 0; /* Remove margin bottom */
+}
+
+.contacts .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: normal;
+}
+
+.contacts .row .content .info h3 i {
+    padding-right: 1rem;
+    color: rgb(103, 33, 55);
+}
+
+.contacts .row form .box::placeholder {
+    text-transform: capitalize;
+}
+.contacts .row form .btn {
+    font-size: 0.9rem; /* Increase font size of button */
+    padding: 0.8rem 1.5rem; /* Increase padding of button */
+    background-color: #ef4949;
+    font-size: 1rem;
+}
